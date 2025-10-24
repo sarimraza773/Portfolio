@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Syed Sarim Raza — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Syed Sarim Raza — Computer Science student at Penn State. Projects, experience and contact." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <img src="profile.jpg" alt="Syed Sarim Raza" class="avatar" id="avatar">
+        <div>
+          <h1>Syed Sarim Raza</h1>
+          <p class="sub">Computer Science • Penn State • Full-stack & web</p>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <section class="intro card">
+      <h2>Hello — I build web projects and interfaces.</h2>
+      <p>
+        I'm a Computer Science student at The Pennsylvania State University interested in web development, data-driven features, and practical projects you can see on GitHub.
+      </p>
+      <p class="muted">Contact: <a href="mailto:ssr5534@psu.edu">ssr5534@psu.edu</a> • <a href="https://github.com/sarimraza773" target="_blank">github.com/sarimraza773</a></p>
+      <div class="cta-row">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn ghost" href="Syed_Sarim_Raza_Resume.pdf" download>Download Resume</a>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h3>Projects</h3>
+      <div class="projects-grid">
+        <article class="project">
+          <h4>Personal Portfolio Website</h4>
+          <p>HTML, CSS, JavaScript — responsive portfolio showcasing projects and experience; deployed on GitHub Pages.</p>
+          <p class="project-meta">Skills: HTML • CSS • Vanilla JS</p>
+          <a class="small-link" href="https://github.com/sarimraza773" target="_blank">View on GitHub</a>
+        </article>
+
+        <!-- Add more project cards here -->
+        <article class="project">
+          <h4>Project Placeholder</h4>
+          <p>Short summary of a project you want to highlight — what, tech, outcome.</p>
+          <p class="project-meta">Skills: JavaScript • React • API</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="card">
+      <h3>Experience</h3>
+      <div class="experience-list">
+        <div class="exp-item">
+          <h4>Digital Media Marketing Intern — Noorusoft</h4>
+          <p class="muted">Nov 2023 – Feb 2024 • Karachi, Pakistan</p>
+          <ul>
+            <li>Optimized SEO and managed Meta & Google Ads for client campaigns.</li>
+            <li>Handled social media accounts and performance analytics.</li>
+          </ul>
+        </div>
+
+        <div class="exp-item">
+          <h4>House Captain • Soccer Team Captain • Logistics Head</h4>
+          <p class="muted">Karachi Grammar School — 2022–2023</p>
+          <ul>
+            <li>Led 200+ students in events and led soccer team to championship trophy.</li>
+            <li>Planned logistics for KGX event; coordinated teams and operations.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h3>Education</h3>
+      <p><strong>The Pennsylvania State University</strong> — Bachelor of Science in Computer Science (Aug 2024 – Present).</p>
+      <p><strong>Karachi Grammar School</strong> — A Levels & O Levels (2019–2023). A in Computer Science, Physics, Mathematics.</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>I'm open to internships, collaborative projects, and contract work. Best way to reach me:</p>
+      <form id="contactForm" action="#" onsubmit="handleContact(event)">
+        <label>
+          Name
+          <input type="text" name="name" id="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="5" required></textarea>
+        </label>
+        <div class="form-row">
+          <button type="submit" class="btn">Send (opens mail client)</button>
+          <button type="button" class="btn ghost" onclick="downloadVCard()">Save contact</button>
+        </div>
+      </form>
+      <p class="muted small">Or email: <a href="mailto:ssr5534@psu.edu">ssr5534@psu.edu</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Syed Sarim Raza — <a href="https://linkedin.com/in/syed-sarim-raza-b03361389" target="_blank">LinkedIn</a> • <a href="https://github.com/sarimraza773" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
