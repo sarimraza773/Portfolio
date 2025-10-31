@@ -3,80 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Syed Sarim Raza — Portfolio</title>
+  <title>Home — Syed Sarim Raza</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Syed Sarim Raza — Computer Science student at Penn State. Projects, experience and contact." />
 </head>
 <body>
-  <header class="site-header fade-in">
+  <header class="site-header">
     <div class="container header-grid">
       <div class="brand">
-        <img src="profile.jpg" alt="Syed Sarim Raza" class="avatar" id="avatar">
+        <img src="profile.jpg" alt="Syed Sarim Raza" class="avatar">
         <div>
           <h1>Syed Sarim Raza</h1>
-          <p class="sub">Computer Science • Penn State • Full-stack & Web</p>
+          <p class="sub">Computer Science @ Penn State</p>
         </div>
       </div>
       <nav class="top-nav">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="qualifications.html">Qualifications</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container main-grid">
-    <section class="intro card fade-in">
-      <h2>Hi — I'm Syed 👋</h2>
-      <p>I’m a Computer Science student at <b>Penn State</b> passionate about creating practical web and software solutions.</p>
-      <p class="muted">Check out my work below or connect with me.</p>
-      <div class="cta-row">
-        <a class="btn" href="#projects">See Projects</a>
-        <a class="btn ghost" href="Syed_Sarim_Raza_Resume.pdf" download>Download Resume</a>
+  <main class="container">
+
+    <!-- Hero / Intro section -->
+    <section class="hero">
+      <div class="hero-left">
+        <img src="profile.jpg" alt="Syed Sarim Raza" class="hero-img" />
+      </div>
+      <div class="hero-right">
+        <h2 class="fade">Hi, I'm <span class="accent">Syed Sarim Raza</span> 👋</h2>
+        <p class="fade">
+          A <b>Computer Science student at Pennsylvania State University</b> passionate about full-stack development, clean UI design, and creative problem-solving.
+        </p>
+        <p class="fade">
+          I love building web projects that blend functionality with simplicity — scroll below to see a few highlights!
+        </p>
+        <div class="fade cta-row">
+          <a href="projects.html" class="btn">Explore My Projects</a>
+          <a href="Syed_Sarim_Raza_Resume.pdf" class="btn ghost" download>Download Resume</a>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="card fade-in">
-      <h3>Projects</h3>
-      <div id="projects-container" class="projects-grid">
-        <p class="muted small">Loading projects...</p>
-      </div>
-    </section>
-
-    <section id="experience" class="card fade-in">
-      <h3>Experience</h3>
-      <div class="exp-item">
-        <h4>Digital Media Marketing Intern — Noorusoft</h4>
-        <p class="muted">Nov 2023 – Feb 2024 • Karachi, Pakistan</p>
-        <ul>
-          <li>Optimized SEO and managed Meta & Google Ads for clients.</li>
-          <li>Handled social media accounts and campaign analytics.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="education" class="card fade-in">
-      <h3>Education</h3>
-      <p><strong>Pennsylvania State University</strong> — B.S. in Computer Science (2024–Present)</p>
-      <p><strong>Karachi Grammar School</strong> — A Levels & O Levels (2019–2023)</p>
-    </section>
-
-    <section id="contact" class="card fade-in">
-      <h3>Contact</h3>
-      <p>Interested in collaborating or hiring? Reach me at:</p>
-      <p><a href="mailto:ssr5534@psu.edu" class="btn">ssr5534@psu.edu</a></p>
-      <div class="socials">
-        <a href="https://github.com/sarimraza773" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/syed-sarim-raza-b03361389" target="_blank">LinkedIn</a>
-      </div>
+    <!-- Featured Projects -->
+    <section class="card fade">
+      <h3>Featured Projects</h3>
+      <div id="home-projects" class="projects-grid"></div>
+      <p><a href="projects.html" class="btn">See All Projects</a></p>
     </section>
   </main>
 
-  <footer class="site-footer fade-in">
+  <footer class="site-footer">
     <p>© <span id="year"></span> Syed Sarim Raza</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
