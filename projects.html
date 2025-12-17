@@ -1,54 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Syed Sarim Raza</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>My Projects</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="education.html">Qualifications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Syed Sarim Raza</title>
+    <!-- Light theme styles -->
+    <link rel="stylesheet" href="style-light.css" />
+    <!-- Optional dark theme. Comment out or remove this line if you prefer only the light theme. -->
+    <link rel="stylesheet" href="style-dark.css" media="prefers-color-scheme: dark" />
+  </head>
+  <body>
+    <header>
+      <h1>Projects</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <section class="project-grid">
+    <section class="section">
+      <h2 class="section-title">My Projects</h2>
+      <div class="card-grid">
+        <!-- Resume Keyword Analyzer Project -->
+        <div class="card">
+          <h3>Resume Keyword Analyzer (Java)</h3>
+          <p>
+            A console‑based tool that analyzes your résumé against a job
+            description to find keyword overlap and missing terms. It outputs a
+            match percentage and a detailed text report to help you tailor your
+            application.
+          </p>
+          <ul>
+            <li><strong>Tech:</strong> Java, Collections, File I/O</li>
+            <li>
+              <strong>Features:</strong> keyword extraction, text cleaning,
+              stopword filtering, auto report generation
+            </li>
+          </ul>
+          <a
+            href="https://github.com/sarimraza773/ResumeKeywordAnalyzer"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
 
-  <div class="project-card">
-    <h3>Resume Keyword Analyzer (Java)</h3>
-    <p>A console-based tool that analyzes your resume against a job description to find keyword overlap and missing terms. It outputs a match percentage and a detailed text report.</p>
-    <ul>
-      <li><strong>Tech:</strong> Java, Collections, File I/O</li>
-      <li><strong>Key Features:</strong> Keyword extraction, text cleaning, stopword filtering, auto report generation</li>
-    </ul>
-    <a href="https://github.com/sarimraza773/ResumeKeywordAnalyzer" target="_blank">View on GitHub</a>
-  </div>
+        <!-- Inventory Management System Project -->
+        <div class="card">
+          <h3>Inventory Management System (Java)</h3>
+          <p>
+            An object‑oriented inventory management program that lets users add
+            new items, remove items by name, and view the current inventory. It
+            employs separate <code>Item</code> and <code>Inventory</code> classes
+            to manage a collection of products and demonstrates the use of
+            generics and collections in Java.
+          </p>
+          <ul>
+            <li><strong>Tech:</strong> Java, Generics, Collections</li>
+            <li>
+              <strong>Features:</strong> add/remove/view items, simple user
+              prompts, real‑time display of inventory status
+            </li>
+          </ul>
+          <!-- Replace the href with the actual repository URL when available -->
+          <a href="#" target="_blank">GitHub</a>
+        </div>
 
-  <div class="project-card">
-    <h3>Portfolio Website</h3>
-    <p>Multi-page responsive portfolio designed using HTML, CSS, and JavaScript to showcase my projects, skills, and education. Deployed using GitHub Pages.</p>
-    <a href="https://sarimraza773.github.io/Portfolio/" target="_blank">View Live</a>
-  </div>
+        <!-- Portfolio Website Project -->
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>
+            A responsive, multi‑page portfolio site built with HTML, CSS and
+            JavaScript to showcase my projects, skills and education. It is
+            deployed using GitHub Pages and includes both light and dark
+            themes.
+          </p>
+          <ul>
+            <li><strong>Tech:</strong> HTML, CSS, JavaScript</li>
+            <li>
+              <strong>Features:</strong> responsive design, theming, clean
+              navigation
+            </li>
+          </ul>
+          <a
+            href="https://sarimraza773.github.io/Portfolio/"
+            target="_blank"
+            >Live Site</a
+          >
+        </div>
 
-  <div class="project-card">
-    <h3>Law Firm Database System (C++)</h3>
-    <p>Developed a complete database management system for a law firm in Karachi. Includes data storage, search, and retrieval modules.</p>
-  </div>
+        <!-- Law Firm Database System Project -->
+        <div class="card">
+          <h3>Law Firm Database System (C++)</h3>
+          <p>
+            A complete database management system developed for a law firm in
+            Karachi. The system handles data storage, search and retrieval of
+            client and case records to streamline day‑to‑day operations.
+          </p>
+          <ul>
+            <li><strong>Tech:</strong> C++, Structured Query Language (SQL)</li>
+            <li>
+              <strong>Features:</strong> record insertion, querying and
+              filtering, modular design
+            </li>
+          </ul>
+        </div>
 
-  <div class="project-card">
-    <h3>SEO Analytics Dashboard</h3>
-    <p>Created a front-end analytics interface for tracking keyword performance and user traffic. Integrates mock API data and chart visualizations.</p>
-  </div>
+        <!-- SEO Analytics Dashboard Project -->
+        <div class="card">
+          <h3>SEO Analytics Dashboard</h3>
+          <p>
+            A front‑end analytics interface for tracking keyword performance and
+            user traffic. The dashboard integrates mock API data and chart
+            visualizations to provide insights into SEO trends.
+          </p>
+          <ul>
+            <li><strong>Tech:</strong> JavaScript, Chart.js, API integration</li>
+            <li>
+              <strong>Features:</strong> interactive charts, responsive layout,
+              modular components
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-</section>
-
-  <footer>
-    <p>© 2025 Syed Sarim Raza</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2025 Syed Sarim Raza</p>
+    </footer>
+  </body>
 </html>
