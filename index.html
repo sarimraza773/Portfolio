@@ -1,68 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Syed Sarim Raza | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Syed Sarim Raza</h1>
-    <p>Computer Science Student | Front-End Developer</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html">Qualifications</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syed Sarim Raza | Portfolio</title>
+    <!-- Light theme styles -->
+    <link rel="stylesheet" href="style-light.css" />
+    <!-- Optional dark theme. Comment out or remove this line if you prefer only the light theme. -->
+    <link rel="stylesheet" href="style-dark.css" media="prefers-color-scheme: dark" />
+  </head>
+  <body>
+    <header>
+      <h1>Syed Sarim Raza</h1>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <section class="about">
-    <img src="profile.png" alt="Syed Sarim Raza" class="profile-pic">
-    <div>
-      <h2>About Me</h2>
-      <p>
-        I'm a Computer Science student at Penn State with strong experience in front-end web development, 
-        leadership, and digital marketing. I enjoy building interactive, responsive, and user-centered websites.
-      </p>
-      <p>
-        Proficient in Java, C++, and Python, with additional skills in HTML, CSS, JavaScript, and Tailwind CSS.
-      </p>
-      <a href="Syed_Sarim_Raza_Resume.pdf" class="btn" download>Download Resume</a>
-    </div>
-  </section>
+    <!-- Hero section introducing the site owner -->
+    <section class="hero">
+      <!-- Placeholder image. Replace profile.png with your own photo if desired -->
+      <img src="profile.png" alt="Profile photo of Syed Sarim Raza" />
+      <div class="hero-text">
+        <h2>Computer Science Student &amp; Front‑End Developer</h2>
+        <p>
+          I’m a Computer Science student at Penn State with strong experience in
+          front‑end web development, leadership and digital marketing. I enjoy
+          building interactive, responsive and user‑centred websites.
+        </p>
+        <p>
+          Proficient in Java, C++, and Python, with additional skills in
+          HTML, CSS, JavaScript and Tailwind CSS.
+        </p>
+        <a class="btn" href="projects.html">View Projects</a>
+        <!-- Replace resume.pdf with the actual path to your résumé file -->
+        <a class="btn" href="resume.pdf">Download Résumé</a>
+      </div>
+    </section>
 
-  <section class="highlight-projects">
-  <h2>Featured Projects</h2>
-  <div class="project-grid">
-    <div class="project-card">
-      <h3>Resume Keyword Analyzer (Java)</h3>
-      <p>A Java-based tool that compares your resume and job description to calculate keyword match percentage and generate a report.</p>
-      <a href="https://github.com/sarimraza773/Job-Keyword-Search" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>Designed and developed a responsive multi-page portfolio using HTML, CSS, and JavaScript. Deployed via GitHub Pages.</p>
-      <a href="https://sarimraza773.github.io/Portfolio/" target="_blank">View Project</a>
-    </div>
-    <div class="project-card">
-      <h3>Law Firm Database (C++)</h3>
-      <p>Built a custom database management system for a law firm in Karachi, improving client data organization and retrieval.</p>
-    </div>
-  </div>
-</section>
+    <!-- Featured projects highlight a few key works -->
+    <section class="section">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Resume Keyword Analyzer (Java)</h3>
+          <p>
+            A console‑based tool that analyzes your résumé against a job
+            description to find keyword overlap and missing terms. It outputs a
+            match percentage and a detailed report.
+          </p>
+          <ul>
+            <li><strong>Tech:</strong> Java, Collections, File I/O</li>
+            <li>
+              <strong>Features:</strong> keyword extraction, text cleaning,
+              stopword filtering, auto report generation
+            </li>
+          </ul>
+          <a
+            href="https://github.com/sarimraza773/ResumeKeywordAnalyzer"
+            target="_blank"
+            >GitHub</a
+          >
+        </div>
+        <div class="card">
+          <h3>Inventory Management System (Java)</h3>
+          <p>
+            An object‑oriented inventory system that lets users add, remove and
+            view items. It provides a simple console interface for managing
+            stock and displays the inventory status after each operation.
+          </p>
+          <ul>
+            <li><strong>Tech:</strong> Java, Generics, Collections</li>
+            <li>
+              <strong>Features:</strong> add/remove/view items, simple user
+              prompts, shows inventory state
+            </li>
+          </ul>
+          <!-- Update the href once the project repository is available -->
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>
+            A multi‑page responsive portfolio designed using HTML, CSS and
+            JavaScript to showcase my projects, skills and education. Deployed
+            using GitHub Pages.
+          </p>
+          <a
+            href="https://sarimraza773.github.io/Portfolio/"
+            target="_blank"
+            >Live Site</a
+          >
+        </div>
+      </div>
+    </section>
 
-
-  <footer>
-    <p>© 2025 Syed Sarim Raza | <a href="mailto:sarimraza773@gmail.com">sarimraza773@gmail.com</a></p>
-    <div class="socials">
-      <a href="https://linkedin.com/in/syed-sarim-raza">LinkedIn</a>
-      <a href="https://github.com/sarimraza773">GitHub</a>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-</body>
+    <footer>
+      <p>&copy; 2025 Syed Sarim Raza</p>
+    </footer>
+  </body>
 </html>
-
-
