@@ -1,0 +1,22 @@
+/*
+ * Dark theme stylesheet for the updated portfolio site.
+ *
+ * This file overrides the CSS custom properties defined in the light theme
+ * (style‑light.css) to provide a high‑contrast dark appearance. The rest
+ * of the styling rules are inherited from the light theme via link order.
+ * Importantly, only variables are defined here – the structural styles live
+ * in the light theme to avoid duplication. To activate the dark theme,
+ * include this stylesheet after style‑light.css in your HTML. Users can
+ * switch between themes by swapping the order of the link tags or by
+ * dynamically enabling/disabling the dark sheet via JavaScript.
+ */
+
+:root {
+  --primary-color: #4B8DF8;
+  --bg-color: #0D1117;
+  --text-color: #E5E7EB;
+  --card-bg: #161B22;
+  --card-shadow: rgba(0, 0, 0, 0.5);
+  --footer-bg: #010409;
+  --footer-text: #9CA3AF;
+}
