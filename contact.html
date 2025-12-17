@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Syed Sarim Raza</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html">Qualifications</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Syed Sarim Raza</title>
+    <!-- Light theme styles -->
+    <link rel="stylesheet" href="style-light.css" />
+    <!-- Optional dark theme. Comment out or remove this line if you prefer only the light theme. -->
+    <link rel="stylesheet" href="style-dark.css" media="prefers-color-scheme: dark" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
 
-  <section class="contact-form">
-    <form action="https://formspree.io/f/xknlwkqd" method="POST">
-      <label>Name</label>
-      <input type="text" name="name" required>
-      <label>Email</label>
-      <input type="email" name="email" required>
-      <label>Message</label>
-      <textarea name="message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <section class="section contact-form">
+      <h2 class="section-title">Get in Touch</h2>
+      <!-- The form uses a mailto URL as a placeholder. Replace the action attribute with your chosen form‑handling service (e.g., Formspree) if desired. -->
+      <form action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-  <footer>
-    <p>© 2025 Syed Sarim Raza</p>
-  </footer>
-</body>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Syed Sarim Raza</p>
+    </footer>
+  </body>
 </html>
