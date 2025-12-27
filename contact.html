@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Syed Sarim Raza</title>
-    <!-- Light theme styles -->
-    <link rel="stylesheet" href="style-light.css" />
-    <!-- Optional dark theme. Comment out or remove this line if you prefer only the light theme. -->
-    <link rel="stylesheet" href="style-dark.css" media="prefers-color-scheme: dark" />
-  </head>
-  <body>
-    <header>
-      <h1>Contact Me</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="education.html">Education</a>
-        <a href="contact.html" class="active">Contact</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Syed Sarim Raza</title>
 
-    <section class="section contact-form">
+  <link rel="stylesheet" href="style-light.css" />
+  <link rel="stylesheet" href="style-dark.css" media="prefers-color-scheme: dark" />
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section fade-in contact-form">
       <h2 class="section-title">Get in Touch</h2>
-      <!-- The form uses a mailto URL as a placeholder. Replace the action attribute with your chosen form‑handling service (e.g., Formspree) if desired. -->
-      <form action="#" method="POST">
+
+      <form action="#" method="POST" class="card">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required />
 
@@ -31,14 +32,20 @@
         <input type="email" id="email" name="email" required />
 
         <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <textarea id="message" name="message" rows="6" required></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit" class="btn">Send</button>
+        <p class="muted">
+          (This form is currently a placeholder — connect Formspree / Netlify Forms if you want it to send emails.)
+        </p>
       </form>
     </section>
+  </main>
 
-    <footer>
-      <p>&copy; 2025 Syed Sarim Raza</p>
-    </footer>
-  </body>
+  <footer>
+    <p>&copy; 2025 Syed Sarim Raza</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
