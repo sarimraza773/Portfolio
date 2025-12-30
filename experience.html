@@ -4,58 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experience | Syed Sarim Raza</title>
-
   <link rel="stylesheet" href="style-light.css" />
-  <link rel="stylesheet" href="style-dark.css" media="prefers-color-scheme: dark" />
 </head>
 <body>
-  <header>
-    <h1>Experience</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html">Education</a>
-      <a href="experience.html" class="active">Experience</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+
+  <header class="site-header">
+    <div class="header-top">
+      <a class="brand" href="about.html" aria-label="Go to About page">
+        <img src="profile.png" alt="Syed Sarim Raza" class="profile-pic" />
+        <span class="site-name">Syed Sarim Raza</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-label="Open menu">☰ Menu</button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <!-- Digital Media Marketing Internship -->
-    <section class="section fade-in">
-      <h2 class="section-title">Digital Media Marketing Internship</h2>
+  <main class="container">
+    <h1 class="page-title">Experience</h1>
+    <p class="page-subtitle">
+      Work experience and roles that shaped how I build and communicate.
+    </p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Digital Media Marketing Intern</h3>
+        <p>
+          Worked on on-page SEO and web updates for clients — improving structure, content, and performance.
+          Helped optimize pages for search visibility and clarity.
+        </p>
+        <div class="chips">
+          <span class="chip">On-Page SEO</span>
+          <span class="chip">Content</span>
+          <span class="chip">Web Updates</span>
+          <span class="chip">Analytics</span>
+        </div>
+      </div>
 
       <div class="card">
-        <h3 style="margin-top:0;">Digital Media Marketing Intern</h3>
-        <p class="muted" style="margin-top:-6px;">
-          (Add Company Name) • (Add Location / Remote) • (Add Dates)
+        <h3>Leadership & Projects</h3>
+        <p>
+          I enjoy roles where I can build, improve systems, and collaborate — especially when there’s a clear goal and real impact.
         </p>
-
-        <ul>
-          <li><strong>On-page SEO:</strong> optimized metadata (titles/descriptions), headings, internal linking, and content structure to improve search visibility.</li>
-          <li><strong>Website + content updates:</strong> built/updated pages and improved layout clarity to increase engagement.</li>
-          <li><strong>Analytics & reporting:</strong> tracked performance and summarized results into actionable insights.</li>
-          <li><strong>Campaign support:</strong> helped with copy/content for promotions and marketing initiatives.</li>
-        </ul>
+        <div class="chips">
+          <span class="chip">Teamwork</span>
+          <span class="chip">Ownership</span>
+          <span class="chip">Problem Solving</span>
+        </div>
       </div>
-    </section>
-
-    <!-- Optional extra experience section you can expand later -->
-    <section class="section fade-in">
-      <h2 class="section-title">Other Experience</h2>
-      <div class="card">
-        <p class="muted" style="margin-top:0;">
-          Add any other roles, leadership positions, volunteering, or part-time work here.
-        </p>
-      </div>
-    </section>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Syed Sarim Raza</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer class="footer">© 2025 Syed Sarim Raza</footer>
+  <script src="main.js"></script>
 </body>
 </html>
