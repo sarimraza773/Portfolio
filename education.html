@@ -4,38 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Education | Syed Sarim Raza</title>
-
   <link rel="stylesheet" href="style-light.css" />
-  <link rel="stylesheet" href="style-dark.css" media="prefers-color-scheme: dark" />
 </head>
 <body>
-  <header>
-    <h1>Education & Experience</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html" class="active">Education</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+
+  <header class="site-header">
+    <div class="header-top">
+      <a class="brand" href="about.html" aria-label="Go to About page">
+        <img src="profile.png" alt="Syed Sarim Raza" class="profile-pic" />
+        <span class="site-name">Syed Sarim Raza</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-label="Open menu">☰ Menu</button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html" class="active">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="section fade-in">
-      <h2 class="section-title">Education</h2>
+  <main class="container">
+    <h1 class="page-title">Education</h1>
+    <p class="page-subtitle">
+      My academic background and relevant coursework highlights.
+    </p>
+
+    <div class="card-grid">
       <div class="card">
-        <ul class="education-list">
-          <li><strong>The Pennsylvania State University</strong> — B.S. in Computer Science (Aug 2024 – Present)</li>
-          <li><strong>Karachi Grammar School</strong> — A Levels</li>
-        </ul>
+        <h3>Penn State Behrend</h3>
+        <p>
+          Computer Science — focused on building practical software, data-driven projects, and clean implementations.
+        </p>
+        <div class="chips">
+          <span class="chip">Programming</span>
+          <span class="chip">Data Structures</span>
+          <span class="chip">Databases</span>
+          <span class="chip">Web Dev</span>
+        </div>
       </div>
-    </section>
+
+      <div class="card">
+        <h3>What I’m Learning</h3>
+        <p>
+          I like combining strong fundamentals with real projects — clean code, logical structure, and UI that feels good to use.
+        </p>
+        <div class="chips">
+          <span class="chip">Java</span>
+          <span class="chip">C++</span>
+          <span class="chip">SQL</span>
+          <span class="chip">React</span>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Syed Sarim Raza</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer class="footer">© 2025 Syed Sarim Raza</footer>
+  <script src="main.js"></script>
 </body>
 </html>
