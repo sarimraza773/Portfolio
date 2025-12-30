@@ -3,70 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Syed Sarim Raza</title>
-
-  <!-- Light theme styles -->
+  <title>Syed Sarim Raza | Portfolio</title>
   <link rel="stylesheet" href="style-light.css" />
-  <!-- Optional dark theme -->
-  <link rel="stylesheet" href="style-dark.css" media="prefers-color-scheme: dark" />
 </head>
+
 <body>
-  <header>
-    <h1>Syed Sarim Raza</h1>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html">Education</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-top">
+
+      <!-- Profile Image + Name -->
+      <div class="brand">
+        <img src="profile.png" alt="Syed Sarim Raza" class="profile-pic" />
+        <span class="site-name">Syed Sarim Raza</span>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </div>
   </header>
 
-  <main>
-    <section class="hero fade-in">
-      <div class="hero-inner">
-        <h2>Computer Science Student • Builder • Problem Solver</h2>
-        <p>
-          I build clean, practical software — from inventory management systems to web apps and dashboards.
-          Check out my projects and reach out if you’d like to collaborate.
-        </p>
+  <!-- HERO -->
+  <main class="container">
+    <section class="hero">
+      <h1>Computer Science Student · Builder · Problem Solver</h1>
+      <p>
+        I build clean, practical software — from inventory management systems
+        to web apps and dashboards. Check out my projects and reach out if
+        you’d like to collaborate.
+      </p>
 
-        <div class="hero-actions">
-          <a class="btn" href="projects.html">View Projects</a>
-          <a class="btn btn-outline" href="contact.html">Contact Me</a>
-        </div>
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn primary">View Projects</a>
+        <a href="contact.html" class="btn secondary">Contact Me</a>
       </div>
     </section>
 
-    <section class="section fade-in">
-      <h2 class="section-title">Highlights</h2>
+    <!-- HIGHLIGHTS -->
+    <section class="highlights">
+      <h2>Highlights</h2>
 
       <div class="card-grid">
+
         <div class="card">
           <h3>Inventory Management System</h3>
-          <p>Full CRUD workflow with clean UI patterns and real-world business logic.</p>
-          <a class="btn" href="projects.html">See details</a>
+          <p>
+            Full CRUD workflow with clean UI patterns and real-world business
+            logic.
+          </p>
+          <a href="projects.html" class="btn small">See details</a>
         </div>
 
         <div class="card">
           <h3>Resume Keyword Analyzer</h3>
-          <p>Compares job descriptions to your resume to find missing keywords.</p>
-          <a class="btn" href="projects.html">See details</a>
+          <p>
+            Compares job descriptions to your resume to find missing keywords.
+          </p>
+          <a href="projects.html" class="btn small">See details</a>
         </div>
 
         <div class="card">
           <h3>Rizvi & Rizvi Website</h3>
-          <p>React + Tailwind law firm site with interactive sections and polished UI.</p>
-          <a class="btn" href="projects.html">See details</a>
+          <p>
+            React + Tailwind law firm site with interactive sections and
+            polished UI.
+          </p>
+          <a href="projects.html" class="btn small">See details</a>
         </div>
+
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Syed Sarim Raza</p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 Syed Sarim Raza
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
