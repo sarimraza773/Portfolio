@@ -4,85 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Syed Sarim Raza</title>
-
   <link rel="stylesheet" href="style-light.css" />
-  <link rel="stylesheet" href="style-dark.css" media="prefers-color-scheme: dark" />
 </head>
 <body>
-  <header>
-    <h1>Projects</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="education.html">Education</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+
+  <header class="site-header">
+    <div class="header-top">
+      <a class="brand" href="about.html" aria-label="Go to About page">
+        <img src="profile.png" alt="Syed Sarim Raza" class="profile-pic" />
+        <span class="site-name">Syed Sarim Raza</span>
+      </a>
+
+      <button class="menu-btn" type="button" aria-label="Open menu">☰ Menu</button>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="section fade-in">
-      <h2 class="section-title">My Projects</h2>
+  <main class="container">
+    <h1 class="page-title">Projects</h1>
+    <p class="page-subtitle">
+      A few projects I’ve built — focused on clean UI, solid logic, and practical value.
+    </p>
 
-      <div class="card-grid">
-        <div class="card">
-          <h3>Resume Keyword Analyzer (Java)</h3>
-          <p>
-            A console-based tool that analyzes your résumé against a job description to find keyword overlap
-            and missing terms. Outputs a match percentage and a detailed report.
-          </p>
-          <ul>
-            <li><strong>Tech:</strong> Java</li>
-            <li><strong>Features:</strong> keyword extraction, match scoring, readable output report</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Inventory Management System</h3>
-          <p>
-            A full inventory workflow with clean UI, CRUD operations, and business logic that mirrors real
-            store/warehouse management.
-          </p>
-          <ul>
-            <li><strong>Tech:</strong> Java, SQL/DB</li>
-            <li><strong>Features:</strong> add/update/remove items, track stock, organized dashboard UI</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>SEO Analytics Dashboard</h3>
-          <p>
-            Front-end analytics interface for tracking keyword performance and user traffic. Integrates mock API data
-            and chart visualizations to show trends.
-          </p>
-          <ul>
-            <li><strong>Tech:</strong> JavaScript, Chart.js, API integration</li>
-            <li><strong>Features:</strong> interactive charts, responsive layout, modular components</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Rizvi & Rizvi Website</h3>
-          <p>
-            A modern web application for a law firm built with React and Tailwind CSS. Polished, interactive sections
-            and responsive layout for a professional presence.
-          </p>
-          <ul>
-            <li><strong>Tech:</strong> React, Tailwind CSS, JavaScript</li>
-            <li><strong>Features:</strong> interactive sections, smooth UI, responsive design</li>
-          </ul>
-          <a class="btn" href="https://github.com/sarimraza773/rizvi-rizvi" target="_blank" rel="noreferrer">
-            GitHub Repository
-          </a>
+    <div class="card-grid">
+      <div class="card" id="inventory">
+        <h3>Inventory Management System</h3>
+        <p>
+          Full CRUD workflow with clean UI patterns and real-world business logic.
+          Tracks products, updates inventory, and supports typical management operations.
+        </p>
+        <div class="chips">
+          <span class="chip">Java</span>
+          <span class="chip">SQL</span>
+          <span class="chip">CRUD</span>
+          <span class="chip">UI</span>
         </div>
       </div>
-    </section>
+
+      <div class="card" id="resume-analyzer">
+        <h3>Resume Keyword Analyzer</h3>
+        <p>
+          Compares job descriptions against your resume to highlight missing keywords and improve alignment.
+          Designed to help tailor applications quickly.
+        </p>
+        <div class="chips">
+          <span class="chip">Text Processing</span>
+          <span class="chip">Automation</span>
+          <span class="chip">Keywords</span>
+        </div>
+      </div>
+
+      <div class="card" id="rizvi">
+        <h3>Rizvi & Rizvi Website</h3>
+        <p>
+          React + Tailwind website with interactive sections and polished UI.
+          Focused on layout consistency and smooth user experience.
+        </p>
+        <div class="chips">
+          <span class="chip">React</span>
+          <span class="chip">Tailwind</span>
+          <span class="chip">UI Polish</span>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Syed Sarim Raza</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer class="footer">© 2025 Syed Sarim Raza</footer>
+  <script src="main.js"></script>
 </body>
 </html>
